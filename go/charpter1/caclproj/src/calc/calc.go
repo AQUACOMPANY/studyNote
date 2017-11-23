@@ -1,5 +1,10 @@
 package main
-import "os"
+import {
+	"os"
+	"fmt"
+	"simplemath"
+	"strconv"
+}
 import "fmt"
 import "simplemath"
 import "strconv"

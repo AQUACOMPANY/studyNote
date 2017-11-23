@@ -43,4 +43,7 @@ cscope.*
 # JUnit test output from ginkgo e2e tests
 /junit*.xml
 
-/bin/
+bin/
+github.com/
+pkg/
+golang.org/
