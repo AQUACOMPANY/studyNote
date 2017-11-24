@@ -44,6 +44,4 @@ cscope.*
 /junit*.xml
 
 bin/
-github.com/
 pkg/
-golang.org/

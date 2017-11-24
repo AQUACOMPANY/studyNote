@@ -1,20 +1,26 @@
 package main
-import {
-	"os"
-	"fmt"
-	"simplemath"
-	"strconv"
+/* import	"os" */
+import	"fmt"
+/* import	"simplemath"
+import	"strconv" */
+import	"github.com/gin-gonic/gin"
+
+func main(){
+	r := gin.Default()
+	r.GET("/ping", func(c *gin.Context) {
+		c.JSON(200, gin.H{
+			"message": "pong",
+		})
+	})
+	r.Run() // listen and serve on 0.0.0.0:8080
 }
-import "fmt"
-import "simplemath"
-import "strconv"
 
 var Usage = func(){
 	fmt.Println("USAGE: calc command [arguments] ...")
 	fmt.Println("\n The commands are:\n\tadd\tAddtion of two values.\n\tsqr\tSquare root of a non-negative values.")
 }
 
-func main(){
+/* func main(){
 	args := os.Args[1:]
 	if args == nil || len(args) < 2{
 		Usage()
@@ -49,4 +55,4 @@ func main(){
 			default:
 				Usage()
 	}
-}
+} */
